@@ -203,6 +203,7 @@ body { font-family: 'Nunito', sans-serif; }
   position: relative;
   flex: 1;
   overflow: visible; /* slide overflow:hidden is the boundary */
+  margin-top: clamp(180px, 3vh, 40px);
 }
 
 /* === BASE CARD STYLE === */
@@ -277,13 +278,14 @@ body { font-family: 'Nunito', sans-serif; }
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(12px, 2vw, 28px);
   flex: 1; overflow: hidden; min-height: 0;
-  align-items: end;
+  align-items: stretch;
 }
 .pillar-col {
   display: flex; flex-direction: column;
   gap: 0;
   overflow: hidden; min-height: 0;
   position: relative;
+  justify-content: flex-end;
 }
 .pillar-col::before {
   content: attr(data-num);
@@ -608,7 +610,7 @@ body { font-family: 'Nunito', sans-serif; }
   <div class="slide-num" aria-hidden="true">01</div>
   <div class="geo decorative" aria-hidden="true"></div>
   <div class="inner">
-    <div class="label reveal">BHT Berlin · Web Engineering · SS 2026</div>
+    <div class="label reveal">BHT Berlin · PROJEKT MODUL · SS 2026</div>
     <h1 class="reveal">Campus<em>OS</em></h1>
     <p class="tagline reveal">Alles, was Studierende brauchen — in einer einzigen App.</p>
     <div class="title-tags stagger reveal">
@@ -694,7 +696,7 @@ body { font-family: 'Nunito', sans-serif; }
         </div>
         <div class="pillar-label">
           <div class="f-name">Dashboard</div>
-          <div class="f-desc">Kalender, Todos &amp; Noten auf einen Blick</div>
+          <div class="f-desc">Kalender, Todos &amp; Noten auf einen Blick abrufbar</div>
         </div>
       </div>
       <!-- Campus Map -->
@@ -714,7 +716,7 @@ body { font-family: 'Nunito', sans-serif; }
         </div>
         <div class="pillar-label">
           <div class="f-name">Campus Wallet</div>
-          <div class="f-desc">BVG-Ticket &amp; Dokumente griffbereit</div>
+          <div class="f-desc">BVG-Ticket &amp; alle wichtigen Dokumente griffbereit</div>
         </div>
       </div>
       <!-- OpenCampus -->
